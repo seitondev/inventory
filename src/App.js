@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Main from './Screens/Main';
 
 function App() { 
+
     return (
-      <div className="App">
-        
-      </div>
+      <Main />
     );
+
 }
 
 export default App;

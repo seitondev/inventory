@@ -1,0 +1,93 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.add-substract {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1vw;
+}
+
+.add-substract button svg:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+input {
+    border: black solid 1px;
+    border-radius: 2px;
+}
+
+@media (max-width: 500px) {
+    .left-inputs {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto';
+    }
+
+    .row-inputs input {
+        padding: 1vh 1vw;
+        font-size: calc(1vw + 1vh);
+        margin: 0.5vh 0;
+    }
+
+    .product-image {
+        height: calc(10vh + 10vw);
+    }
+
+    .add-substract button {
+        background-color: white;
+        outline: none;
+        border: none;
+        padding: 0;
+        font-size: calc(3vw + 3vh);
+    }
+}
+
+@media (min-width: 501px) {
+    .left-inputs {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1vw;
+    }
+
+    .row-inputs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Roboto';
+    }
+
+    .row-inputs input {
+        padding: 1vh 1vw;
+        font-size: calc(0.8vw + 0.8vh);
+        margin: 1vh 0;
+    }
+
+    .product-image {
+        height: calc(5vh + 5vw);
+    }
+
+    .add-substract button {
+        background-color: white;
+        outline: none;
+        border: none;
+        padding: 0;
+        font-size: calc(1.8vw + 1.8vh);
+    }
+}
